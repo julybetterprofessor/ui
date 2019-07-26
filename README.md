@@ -1,4 +1,4 @@
 # Better Professor - User Interface
 
 ## Contributors
-*Theodore Ngo - [teddyhn](https://github.com/teddyhn)
+* Theodore Ngo - [teddyhn](https://github.com/teddyhn)
