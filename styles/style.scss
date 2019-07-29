@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Source+Sans+Pro:400,600&display=swap');
+
+@import "./variables";
+
+@import "./nav";
+
+@import "./carousel";
+
+@import "./button";
+
+@import "./icon";
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: $bgColor;
+    color: $textColor;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+
+  hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.features {
+    padding-top: 2rem;
+}
+
+footer {
+  background-color: $textColor;
+  color: $bgColor;
+  padding-top: 2rem;
+
+  hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+  }
+
+  hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+  }
+  
+  h5 {
+      padding-top: 2rem;
+  }
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 800px) {
+  .display-4 {
+    font-size: 200%;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-indicators {
+    display: none;
+  }
+  .display-4 {
+    font-size: 200%;
+  }
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/fixed.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}

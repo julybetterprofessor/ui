@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One|Source+Sans+Pro:400,600&display=swap");
+.navbar {
+  background-color: #EFEFEF;
+  padding: .8rem;
+  margin: 0 auto;
+}
+
+.navbar .container-fluid {
+  max-width: 80%;
+}
+
+.navbar .navbar-nav li {
+  padding: 0 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 1.1em;
+}
+
+.navbar-light .navbar-nav {
+  color: #EFEFEF;
+}
+
+.carousel-inner {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 800px) {
+  .carousel-caption {
+    top: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-caption {
+    top: 40%;
+  }
+}
+
+.carousel-caption h1 {
+  font-family: 'Fredoka One';
+  font-size: 500%;
+  text-shadow: 1px 1px 15px #000;
+}
+
+@media (max-width: 1000px) {
+  .carousel-caption h1 {
+    font-size: 400%;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .carousel-caption h3 {
+    font-size: 140%;
+    padding-bottom: .2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel-caption h3 {
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-caption h3 {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+}
+
+.btn-primary {
+  background-color: #FFD700;
+  border: 1px solid #FFD700;
+  color: #4A4A4A;
+}
+
+.btn-primary:hover {
+  background-color: rgba(255, 215, 0, 0.7);
+  border: 1px solid rgba(255, 215, 0, 0.7);
+}
+
+.fa-file-alt, .fa-chalkboard-teacher, .fa-cogs {
+  font-size: 4em;
+  margin: 1rem;
+  color: #3454D1;
+}
+
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .social a {
+    font-size: 2em;
+    padding: .7rem;
+  }
+}
+
+.social .fa-facebook-square {
+  color: #3b5998;
+}
+
+.social .fa-facebook-square:hover {
+  color: #d5d5d5;
+}
+
+.social .fa-twitter-square {
+  color: #00aced;
+}
+
+.social .fa-twitter-square:hover {
+  color: #d5d5d5;
+}
+
+.social .fa-github-square {
+  color: #211F1F;
+}
+
+.social .fa-github-square:hover {
+  color: #d5d5d5;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #EFEFEF;
+  color: #4A4A4A;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.features {
+  padding-top: 2rem;
+}
+
+footer {
+  background-color: #4A4A4A;
+  color: #EFEFEF;
+  padding-top: 2rem;
+}
+
+footer hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+footer hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+footer h5 {
+  padding-top: 2rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 800px) {
+  .display-4 {
+    font-size: 200%;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-indicators {
+    display: none;
+  }
+  .display-4 {
+    font-size: 200%;
+  }
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#fixed {
+  background-image: url("img/fixed.jpg");
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

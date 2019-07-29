@@ -1,0 +1,42 @@
+.fa-file-alt, .fa-chalkboard-teacher, .fa-cogs {
+    font-size: 4em;
+    margin: 1rem;
+    color: $secondaryColor;
+}
+
+.social {
+    a {
+        font-size: 4.5em;
+        padding: 3rem;
+
+        @media (max-width: 1000px) {
+            font-size: 4em;
+            padding: 2rem;
+        }
+
+        @media (max-width: 800px) {
+            font-size: 2.5em;
+            padding: 1.2rem;
+        }
+        @media (max-width: 500px) {
+            font-size: 2em;
+            padding: .7rem;
+        }
+    }
+
+    .fa-facebook-square {
+        color: #3b5998;
+        @include iconHover();
+    }
+
+    .fa-twitter-square {
+        color: #00aced;
+        @include iconHover();
+    }
+
+    .fa-github-square {
+        color: #211F1F;
+        @include iconHover();
+    }
+}
+  
