@@ -115,6 +115,12 @@
   }
 }
 
+@media (max-width: 330px) {
+  .carousel-caption h1 {
+    display: none;
+  }
+}
+
 .carousel-caption h3 {
   font-size: 200%;
   font-weight: 600;
