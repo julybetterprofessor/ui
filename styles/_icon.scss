@@ -1,0 +1,32 @@
+.fa-file-alt, .fa-chalkboard-teacher, .fa-cogs {
+    font-size: 3.5em;
+    margin: 1rem;
+    color: $secondaryColor;
+}
+
+.social {
+    padding-left: 1rem;
+
+    a {
+        font-size: 2.5em;
+        padding-right: 0.5em;
+
+        @media (max-width: 1000px) {
+
+        }
+
+        @media (max-width: 800px) {
+
+        }
+
+        @media (max-width: 500px) {
+            
+        }
+    }
+
+    .fa-facebook, .fa-github, .fa-twitter, .fa-linkedin {
+        color: $bgColor;
+        @include iconHover();
+    }
+}
+  

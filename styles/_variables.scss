@@ -1,0 +1,19 @@
+// Colors
+
+$primaryColor: #17223B;
+$secondaryColor: #3454D1;
+$accentColor: #FFD700;
+$bgColor: #EFEFEF;
+$textColor: #4A4A4A;
+
+// Mixins
+
+@mixin iconHover() {
+    &:hover {
+        color: $secondaryColor;
+    }
+}
+
+// Bootstrap
+
+$enable-shadows: true;

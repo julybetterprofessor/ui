@@ -1,0 +1,27 @@
+.card {
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    .col-2 {
+        @media (max-width: 768px) {
+            padding: 0;
+        }
+    }
+
+    img {
+        border-radius: 50%;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+  
+    .container-fluid {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.team-title {
+    margin: 0 auto;
+}

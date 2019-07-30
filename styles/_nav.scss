@@ -1,0 +1,30 @@
+.navbar {
+    background-color: $bgColor;
+    padding: .8rem;
+    margin: 0 auto;
+
+    .container-fluid {
+        max-width: 80%;
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+
+    .navbar-nav {
+
+        li {
+        padding: 0 10px;
+        }
+        
+        .nav-link {
+            font-size: 1.1em;
+        }
+    }
+}
+
+.navbar-light .navbar-nav {
+    color: $bgColor;
+}
+
+
