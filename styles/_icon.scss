@@ -26,6 +26,8 @@
 
     .fa-facebook, .fa-github, .fa-twitter, .fa-linkedin {
         color: $bgColor;
+        transition: 0.15s;
+
         @include iconHover();
     }
 }

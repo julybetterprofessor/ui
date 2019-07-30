@@ -194,6 +194,8 @@
 
 .social .fa-facebook, .social .fa-github, .social .fa-twitter, .social .fa-linkedin {
   color: #EFEFEF;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
 }
 
 .social .fa-facebook:hover, .social .fa-github:hover, .social .fa-twitter:hover, .social .fa-linkedin:hover {
@@ -232,6 +234,18 @@
 
 .about-text {
   margin: 0 auto;
+}
+
+.card-body a {
+  font-size: 2.5rem;
+  color: #3454D1;
+  padding-right: 0.5rem;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.card-body a:hover {
+  color: rgba(52, 84, 209, 0.8);
 }
 
 footer {
