@@ -9,6 +9,12 @@
   max-width: 80%;
 }
 
+@media (max-width: 768px) {
+  .navbar .container-fluid {
+    max-width: 100%;
+  }
+}
+
 .navbar .navbar-nav li {
   padding: 0 10px;
 }
@@ -79,11 +85,18 @@
   }
 }
 
+@media (max-width: 500px) {
+  .carousel-caption h1 {
+    font-size: 200%;
+  }
+}
+
 .carousel-caption h3 {
   font-size: 200%;
   font-weight: 600;
   text-shadow: 1px 1px 10px #000;
   padding-bottom: 1rem;
+  color: #fff;
 }
 
 @media (max-width: 1000px) {
@@ -101,7 +114,7 @@
 
 @media (max-width: 500px) {
   .carousel-caption h3 {
-    font-size: 110%;
+    display: none;
   }
 }
 
@@ -119,6 +132,10 @@
   }
 }
 
+.btn:hover {
+  background-color: #3454D1;
+}
+
 .btn-primary {
   background-color: #FFD700;
   border: 1px solid #FFD700;
@@ -131,59 +148,56 @@
 }
 
 .fa-file-alt, .fa-chalkboard-teacher, .fa-cogs {
-  font-size: 4em;
+  font-size: 3.5em;
   margin: 1rem;
   color: #3454D1;
 }
 
+.social {
+  padding-left: 1rem;
+}
+
 .social a {
-  font-size: 4.5em;
-  padding: 3rem;
+  font-size: 2.5em;
+  padding-right: 0.5em;
 }
 
-@media (max-width: 1000px) {
-  .social a {
-    font-size: 4em;
-    padding: 2rem;
+.social .fa-facebook, .social .fa-github, .social .fa-twitter, .social .fa-linkedin {
+  color: #EFEFEF;
+}
+
+.social .fa-facebook:hover, .social .fa-github:hover, .social .fa-twitter:hover, .social .fa-linkedin:hover {
+  color: #3454D1;
+}
+
+.card {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .card .col-2 {
+    padding: 0;
   }
 }
 
-@media (max-width: 800px) {
-  .social a {
-    font-size: 2.5em;
-    padding: 1.2rem;
+.card img {
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .card img {
+    display: none;
   }
 }
 
-@media (max-width: 500px) {
-  .social a {
-    font-size: 2em;
-    padding: .7rem;
-  }
+.card .container-fluid {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.social .fa-facebook-square {
-  color: #3b5998;
-}
-
-.social .fa-facebook-square:hover {
-  color: #d5d5d5;
-}
-
-.social .fa-twitter-square {
-  color: #00aced;
-}
-
-.social .fa-twitter-square:hover {
-  color: #d5d5d5;
-}
-
-.social .fa-github-square {
-  color: #211F1F;
-}
-
-.social .fa-github-square:hover {
-  color: #d5d5d5;
+.team-title {
+  margin: 0 auto;
 }
 
 html, body {
@@ -192,6 +206,15 @@ html, body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #EFEFEF;
   color: #4A4A4A;
+}
+
+h2, h3, h4 {
+  font-weight: 600;
+  color: #17223B;
+}
+
+.display-4 {
+  font-weight: 600;
 }
 
 .padding {
@@ -204,6 +227,10 @@ html, body {
   padding-top: 2rem;
 }
 
+.welcome h1 {
+  color: #17223B;
+}
+
 .welcome hr {
   border-top: 2px solid #b4b4b4;
   width: 95%;
@@ -211,14 +238,42 @@ html, body {
   margin-bottom: 1rem;
 }
 
+.middle {
+  margin: 0 auto;
+}
+
 .features {
   padding-top: 2rem;
+}
+
+.container-fluid {
+  max-width: 80%;
+}
+
+@media (max-width: 800px) {
+  .container-fluid {
+    max-width: 90%;
+  }
 }
 
 footer {
   background-color: #4A4A4A;
   color: #EFEFEF;
-  padding-top: 2rem;
+  padding-top: 3rem;
+}
+
+footer .col-12 {
+  padding-bottom: 0;
+}
+
+footer .container-fluid {
+  width: 80%;
+}
+
+footer h3 {
+  color: #EFEFEF;
+  font-weight: 400;
+  padding-bottom: 0.5rem;
 }
 
 footer hr.light {
@@ -235,8 +290,17 @@ footer hr.light-100 {
   margin-bottom: 1rem;
 }
 
-footer h5 {
-  padding-top: 2rem;
+footer .logo {
+  font-family: 'Fredoka One';
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer ul li {
+  margin: 5px 0;
 }
 
 /*---Media Queries --*/

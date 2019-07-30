@@ -10,12 +10,23 @@
 
 @import "./icon";
 
+@import "./team";
+
 html, body {
     height: 100%;
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     background-color: $bgColor;
     color: $textColor;
+}
+
+h2, h3, h4 {
+  font-weight: 600;
+  color: $primaryColor;
+}
+
+.display-4 {
+  font-weight: 600;
 }
 
 .padding {
@@ -27,6 +38,10 @@ html, body {
   margin: 0 auto;
   padding-top: 2rem;
 
+  h1 {
+    color: $primaryColor;
+  }
+
   hr {
     border-top: 2px solid #b4b4b4;
     width: 95%;
@@ -35,14 +50,40 @@ html, body {
   }
 }
 
+.middle {
+  margin: 0 auto;
+}
+
 .features {
-    padding-top: 2rem;
+  padding-top: 2rem;
+}
+
+.container-fluid {
+  max-width: 80%;
+
+  @media (max-width: 800px) {
+    max-width: 90%;
+  }
 }
 
 footer {
   background-color: $textColor;
   color: $bgColor;
-  padding-top: 2rem;
+  padding-top: 3rem;
+
+  .col-12 {
+    padding-bottom: 0;
+  }
+
+  .container-fluid {
+    width: 80%;
+  }
+
+  h3 {
+    color: $bgColor;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+  }
 
   hr.light {
     border-top: 1px solid #d5d5d5;
@@ -57,12 +98,20 @@ footer {
     margin-top: .8rem;
     margin-bottom: 1rem;
   }
-  
-  h5 {
-      padding-top: 2rem;
+
+  .logo {
+    font-family: 'Fredoka One'
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      margin: 5px 0;
+    }
   }
 }
-
 
 /*---Media Queries --*/
 @media (max-width: 800px) {

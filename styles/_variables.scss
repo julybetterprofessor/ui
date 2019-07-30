@@ -10,7 +10,7 @@ $textColor: #4A4A4A;
 
 @mixin iconHover() {
     &:hover {
-        color: #d5d5d5;
+        color: $secondaryColor;
     }
 }
 

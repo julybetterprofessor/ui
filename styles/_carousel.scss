@@ -44,6 +44,10 @@
         @media (max-width: 800px) {
             font-size: 250%;
         }
+
+        @media (max-width: 500px) {
+            font-size: 200%;
+        }
     }
 
     h3 {
@@ -51,6 +55,7 @@
         font-weight: 600;
         text-shadow: 1px 1px 10px #000;
         padding-bottom: 1rem;
+        color: #fff;
 
         @media (max-width: 1000px) {
             font-size: 140%;
@@ -62,7 +67,7 @@
         }
 
         @media (max-width: 500px) {
-            font-size: 110%;
+            display: none;
         }
     }
 
