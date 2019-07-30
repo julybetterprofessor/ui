@@ -14,11 +14,34 @@
     .navbar-nav {
 
         li {
-        padding: 0 10px;
+            padding: 0 10px;
+
+            @media (max-width: 768px) {
+                padding: 0;
+            }
         }
         
         .nav-link {
             font-size: 1.1em;
+            color: $textColor;
+            padding: 0;
+            margin: 0 0.5rem;
+            border-bottom: 1px solid rgba(74, 74, 74, 0);
+            -webkit-transition: border 333ms ease;
+            -moz-transition: border 333ms ease;
+            -ms-transition: border 333ms ease;
+            -o-transition: border 333ms ease;
+            transition: border 333ms ease;
+
+            @media (max-width: 768px) {
+                margin: 0.5rem 0;
+            }
+
+            &:hover {
+                color: $textColor;
+                text-decoration: none;
+                border-bottom: 1px solid rgba(74, 74, 74, 1);
+            }
         }
     }
 }
