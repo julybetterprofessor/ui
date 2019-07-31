@@ -194,8 +194,8 @@
 
 .social .fa-facebook, .social .fa-github, .social .fa-twitter, .social .fa-linkedin {
   color: #EFEFEF;
-  -webkit-transition: 0.15s;
-  transition: 0.15s;
+  -webkit-transition: 150ms;
+  transition: 150ms;
 }
 
 .social .fa-facebook:hover, .social .fa-github:hover, .social .fa-twitter:hover, .social .fa-linkedin:hover {
@@ -240,12 +240,12 @@
   font-size: 2.5rem;
   color: #3454D1;
   padding-right: 0.5rem;
-  -webkit-transition: 0.15s;
-  transition: 0.15s;
+  -webkit-transition: 333ms;
+  transition: 333ms;
 }
 
 .card-body a:hover {
-  color: rgba(52, 84, 209, 0.8);
+  color: rgba(52, 84, 209, 0.7);
 }
 
 footer {
@@ -406,6 +406,17 @@ figure {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.fixed-wrap:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 #fixed {
