@@ -35,12 +35,17 @@
 
             @media (max-width: 768px) {
                 margin: 0.5rem 0;
+                border-bottom: none;
             }
 
             &:hover {
                 color: $textColor;
                 text-decoration: none;
                 border-bottom: 1px solid rgba(74, 74, 74, 1);
+
+                @media (max-width: 768px) {
+                    border-bottom: none;
+                }
             }
         }
     }
