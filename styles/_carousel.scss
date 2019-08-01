@@ -48,6 +48,14 @@
         @media (max-width: 500px) {
             font-size: 200%;
         }
+
+        @media (max-width: 380px) {
+            font-size: 150%;
+        }
+
+        @media (max-width: 290px) {
+            display: none;
+        }
     }
 
     h3 {
@@ -75,11 +83,6 @@
         @media (max-width: 800px) {
             font-size: 95%;
             padding: 8px 14px;
-        }
-
-        @media (max-width: 500px) {
-            font-size: 90%;
-            padding: 4px 8px;
         }
     }
 }

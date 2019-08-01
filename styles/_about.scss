@@ -25,3 +25,20 @@
 .team-title {
     margin: 0 auto;
 }
+
+.about-text {
+    margin: 0 auto;
+}
+
+.card-body {
+    a {
+        font-size: 2.5rem;
+        color: $secondaryColor;
+        padding-right: 0.5rem;
+        transition: 333ms;
+
+        &:hover {
+           color: scale-color($secondaryColor, $alpha: -30%);
+        }
+    }
+}
