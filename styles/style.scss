@@ -58,6 +58,12 @@ h2, h3, h4 {
 
 .features {
   padding-top: 2rem;
+
+  .text-right {
+    @media (max-width: 1200px) {
+      text-align: center!important;
+    }
+  }
 }
 
 .container-fluid {

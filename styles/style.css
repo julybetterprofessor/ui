@@ -361,6 +361,12 @@ h2, h3, h4 {
   padding-top: 2rem;
 }
 
+@media (max-width: 1200px) {
+  .features .text-right {
+    text-align: center !important;
+  }
+}
+
 .container-fluid {
   max-width: 80%;
 }
